@@ -5,6 +5,7 @@ mailcatcher-dependencies:
   pkg.installed:
     - names:
       - {{ mailcatcher.ruby_package }}
+      - {{ mailcatcher.gem_package }}
       - {{ mailcatcher.libsqlite3dev_package }}
 
 

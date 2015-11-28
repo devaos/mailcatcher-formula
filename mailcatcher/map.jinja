@@ -5,6 +5,7 @@
 {% set mailcatcher = salt['grains.filter_by']({
     'Debian': {
         'ruby_package': 'ruby-dev',
+        'gem_package': 'gem-dev',
         'libsqlite3dev_package': 'libsqlite3-dev',
         'catchmail_bin': '/usr/local/bin/catchmail',
         'mailcatcher_bin': '/usr/local/bin/mailcatcher',
@@ -15,6 +16,7 @@
     },
     'RedHat': {
         'ruby_package': 'ruby-dev',
+        'gem_package': 'gem-dev',
         'libsqlite3dev_package': 'libsqlite3-dev',
         'catchmail_bin': '/usr/local/bin/catchmail',
         'mailcatcher_bin': '/usr/local/bin/mailcatcher',
