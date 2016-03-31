@@ -29,6 +29,10 @@ mailcatcher:
     - template: jinja
     - context:
       mailcatcher: {{ mailcatcher }}
+  module.wait:
+    - name: service.systemctl_reload
+    - watch:
+      - file: /etc/init.d/mailcatcher
   service.running:
     - enable: True
     - require:
